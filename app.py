@@ -57,7 +57,7 @@ def identify_user(app, environ, response_headers=dict()):
 
 def identify_company(app, environ, response_headers=dict()):
     # Your custom code that returns a company id string
-    return "my-chat-user-company"
+    return "my-chat-company"
 
 moesif_settings = {
     'APPLICATION_ID': os.getenv('MOESIF_APPLICATION_ID'),
