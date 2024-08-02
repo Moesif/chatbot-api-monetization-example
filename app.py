@@ -38,9 +38,7 @@ def chat():
     tokens_used = response.usage.total_tokens
 
     response_obj =  jsonify({
-        'response': response_text,
-        # you can put token used.
-        # 'tokens_used': tokens_used
+        'response': response_text
     })
 
     # Add the token usage to the response headers
@@ -73,3 +71,4 @@ app.wsgi_app = MoesifMiddleware(app.wsgi_app, moesif_settings)
 
 if __name__ == "__main__":
     app.run(debug=True)
+
